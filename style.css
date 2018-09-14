@@ -92,7 +92,9 @@ color: #999;
 font-weight: bold;
 text-decoration: none;
 float: right;
+/* 
 border-right: 1px solid #fff;
+ */
 }
 
 #navcontainer ul li a.current_page
@@ -102,7 +104,9 @@ color: #0099ff;
 font-weight: bold;
 text-decoration: none;
 float: right;
+/* 
 border-right: 1px solid #fff;
+ */
 }
 
 #navcontainer ul li a:hover
