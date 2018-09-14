@@ -12,6 +12,25 @@ body {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-si
 #larger_container{width: 640px; height:470px; margin:20px auto;}
 
 #logo {width: 220px; height:64px; float: left; margin-bottom: 20px}
+#logo a
+{
+color: #999;
+font-weight: bold;
+text-decoration: none;
+}
+
+#logo a.current_page
+{
+color: #0099ff;
+font-weight: bold;
+text-decoration: none;
+}
+
+#logo a:hover
+{
+color: #000;
+font-weight: bold
+}
 
 #header {height: 395px; background: url(img/header.png) bottom no-repeat; clear: both }
 
