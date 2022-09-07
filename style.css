@@ -125,23 +125,23 @@ th, td {
     padding: 5px;
 }
 
-li {
+#complaints li {
   margin: 30px 0;
   text-align: justify;
 }
 
-li span {
+#complaints li span {
   position: relative;
   left: -10px;
 }
 
-ol {
+#complaints ol {
   list-style-type: none;
   counter-reset: elementcounter;
   padding-left: 0;
 }
 
-li:before {
+#complaints li:before {
   content: "Complaint " counter(elementcounter) ": ";
   counter-increment: elementcounter;
   font-weight: bold;
