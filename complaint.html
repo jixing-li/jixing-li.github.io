@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" media="all" href="style.css" />
@@ -15,6 +15,8 @@
 <h2 style="color:red; font-size:45px">Jixing's collection of students' complaints </h2>
 </div>
 
+<br>
+
 <div>
 <center><img src="img/complaint.jpg" width="600" alt="jixing" /></center>
 </div>
@@ -23,14 +25,42 @@
 </div>
 
 
-<div id="middle">
+<h1 style="color:red;">Leave your complaints!</h1>
 
-<p style="font-size:20px"> <b style="color:red">Student 1</b>: I am XXX, one of the students taking LT3233. This email is about to complain about the instructor Dr. Jixing Li of LT3233 Computational Linguistics. During the first lecture, she did not teach the content of the lecture properly and told us to do the assignment directly without clear instructions. For instance, she was stuttering and did not explain the content clearly. This course should be teaching the commands and the concepts of computational linguistics, but she did not teach anything about it. The duration of the course is only around an hour, which is not enough for students to learn. Most of the students were really confused. Also, when we asked her questions about the course, she could not answer. It made us feel like she was not prepared for the class. We strongly suggest the instructor improve her teaching way or change the instructor.
-</p>
-
+<div id="space3">
 </div>
 
-<div id="footer">&copy; Jixing Li</div>
+<textarea id="comment" rows="10" cols="48" style="font-size:20px"></textarea>
+<button class="button" style="vertical-align:middle" id="post"><span>Submit</span></button>
+
+<div id="space2">
+</div>
+
+<div>
+<ul> 
+<ol type="1">
+<li id="complaint" style="font-size:22px">
+Dear Prof. Kit, I am XXX, one of the students taking LT3233. This email is about to complain about the instructor Dr. Jixing Li of LT3233 Computational Linguistics. During the first lecture, she did not teach the content of the lecture properly and told us to do the assignment directly without clear instructions. For instance, she was stuttering and did not explain the content clearly. This course should be teaching the commands and the concepts of computational linguistics, but she did not teach anything about it. The duration of the course is only around an hour, which is not enough for students to learn. Most of the students were really confused. Also, when we asked her questions about the course, she could not answer. It made us feel like she was not prepared for the class. We strongly suggest the instructor improve her teaching way or change the instructor.
+</li>
+</ol>  
+</ul>  
+</div>
+
+<div id="space1">
+</div>
+
+<script>
+var post= document.getElementById("post");
+post.addEventListener("click", function(){
+    var commentBoxValue= document.getElementById("comment").value; 
+    var li = document.createElement("li");
+    var text = document.createTextNode(commentBoxValue);
+    li.appendChild(text);
+    document.getElementById("complaint").appendChild(li);
+ });
+</script>
+
+</div>
 </div><!-- close container -->
 </div>
 
