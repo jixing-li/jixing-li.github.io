@@ -142,7 +142,7 @@ th, td {
 }
 
 #complaints li:before {
-  content: "Complaint " counter(elementcounter) ": ";
+  content: "Comment " counter(elementcounter) ": ";
   counter-increment: elementcounter;
   font-weight: bold;
   color: red;
